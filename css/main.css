@@ -1,0 +1,240 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	margin:0;
+	padding: 0;
+	font-size: 1.4em;
+	line-height: 1.6em;  
+}
+
+body > section{
+	clear:both;
+	padding: 50px;
+}
+
+h1,h2 {
+	font-family: 'Exo 2', sans-serif;
+}
+
+h1{
+	color:=#0c243d;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 2.4em;
+
+
+}
+
+/*para que todas las etiquetas h2 tenga este atributo*/
+h2 {
+	color: #0c243d;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.4em;
+}
+h2.parallax
+{
+	font-size: 3.6em;
+	font-weight: 700;
+	text-transform: none;
+	color: #ffffff;
+	text-shadow: 0px 7px 8px black;
+	-webkit-text-shadow:0px 7px 8px black;/*para que detecte la sombra googlec rome*/
+	-moz-text-shadow:0px 7px 8px black; /*para que detecte la sombra mozilla firefox*/
+}
+
+.grisBG{
+	background-color: #f5f5f5;
+}
+.azulBG{
+	background-color: #123156;
+}
+.separador
+{
+	width: 40px;
+	height: 4px;
+	display: block;
+	margin: 0 auto;
+	background-color:#0c243d;
+	margin-bottom: 30px;
+}
+
+/*#principal*/
+section#principal{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+50,207cca+51,7db9e8+100;Blue+Gloss+%232 */
+background: #3b679e; /* Old browsers */
+background: -moz-linear-gradient(top, #3b679e 0%, #2b88d9 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+section#principal img{
+	margin: 0 auto;
+}
+
+/*section*/
+section#app .social{
+	/*para generar el circulo*/
+	width: 150px;
+	height:150px;
+
+	border-radius: 50%;
+	background-color: #123156;
+	margin: 0 auto;
+	/*para agregar iconos centrados*/
+	line-height: 180px;
+
+}
+
+
+
+/*#caractristicas*/
+
+section#caracteristica p{
+	font-size: .9em;
+	color: #858585;
+}
+
+section#caracteristica .caracteristicas{
+	margin-bottom: 20px;
+	clear: both; /*para que se valla uno debajo del otro*/
+}
+section#caracteristica .icon{
+
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: #123156;
+	margin: 0 auto;
+	line-height: 140px; /*alinear verticalmente*/
+	text-align: center; /*alinear horizontalmente*/
+}
+
+section#caracteristica img#appCentral{
+	margin: 0 auto;
+}
+
+/*#pantallas*/
+
+div.modal-body {
+	text-align: center;
+}
+div.modal-body img {
+	max-height: 90%;
+}
+
+/**Parallax**/
+
+section#parallax{
+	height: 500px;
+	background-image: url(../img/ipadApp.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed; /*para que el fondo sea fijo*/
+    background-size: cover;
+}
+
+/**Descargar**/
+
+section#descargar div.contenidoDescarga{
+	height: 700px;
+}
+section#descargar div.phone{
+	width: 50%;
+	float: left;
+	height: 100% /**tomando cmo referencicia que su alto total es de 700px **/
+	box-shadow:inset -7px -7px 12px -2px rgba(0,0,0,.15);/*box sirve para los div su contenido*/
+	-webkit-box-shadow:inset -7px -7px 12px -2px rgba(0,0,0,.15);
+	-moz-box-shadow:inset -7px -7px 12px -2px rgba(0,0,0,.15);
+	z-index: 1;
+	text-align: center;
+
+}
+section#descargar div.derechaVacio{
+	width: 50%;
+	background-color: #f5f5f5;
+	float: right;
+	height: 100%;
+	z-index: 2;
+	background-image: url(../img/descargaAppBG.png);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+section#descargar .descarga{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: 50px;
+
+}
+
+section#descargar .plataformas > div{
+	border-radius: 20px;
+	border: 3px solid #0c243d;
+	padding: 11px 0;
+	font-size: 1.2em;
+	position: relative;
+	padding-left: 50px;
+	color: #0c243d; 
+}
+section#descargar .plataformas > div span{
+	font-weight: bold;
+	
+}
+/**SOPORTE**/
+section#soporte h1{
+	color: #ffffff;
+}
+section#soporte .separador{
+	background-color: #ffffff;
+}
+section#soporte p{
+	font-size: 1.6em;
+	color:white;
+	margin-bottom: 20px;
+}
+section#soporte .campos{
+	background-color: #123156;
+	border: 2px solid #ffffff;
+	border-radius: 10px;
+	color: #ffffff;
+}
+section#soporte form{
+	margin-top:30px;
+}
+section#soporte input{
+	min-height: 50px;
+	margin-bottom: 20px;
+}
+section#soporte textarea{
+	min-height: 200px;
+}
+section#soporte .btn.btn-default{
+	background:white;
+	border-radius: 14px;
+	padding: 5px 43px;
+	font-size: 1.4em;
+	text-transform: uppercase;
+
+}
+
+::-webkit-input-placeholder {
+	color:#ffffff!important;
+}
+
+:moz-placeholder {
+color:#ffffff!important;
+}
+::-moz-placeholder {
+color:#ffffff!important;
+}
+
+:-ms-input-placeholder {
+color:#ffffff!important;
+}
